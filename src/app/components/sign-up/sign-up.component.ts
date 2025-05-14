@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StudentsService } from '../../services/students.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './sign-up.component.css'
 })
 export class SignUpComponent {
+  constructor(public studentService: StudentsService){}
 
+  studentList = this.studentService.getStudents();
 }
