@@ -1,8 +1,11 @@
-<form [formGroup]="userDetails">
-    <label for="userName">name: </label>
-    <input type="text" formControlName = "name" name="userName" id="userName">
-    <label for="userPassword">password: </label>
-    <input type="text" formControlName = "password" name="userPassword" id="userPassword">
-    <button (click)="checkUser()">Enter</button>
-</form>
-<h3></h3>
+<div class="login-container">
+    <form [formGroup]="userDetails">
+        <label for="userName">name: </label>
+        <input type="text" formControlName="name" name="userName" id="userName">
+        <label for="userPassword">password: </label>
+        <input type="text" formControlName="password" name="userPassword" id="userPassword">
+        <p>{{error}}</p>
+        <button (click)="checkUser()">Enter</button>
+        
+    </form>   
+</div>

@@ -14,4 +14,5 @@ export class LessonsListComponent {
   constructor(public lessonsList: LessonsService){}
 
   lessons = this.lessonsList.getLessons();
+
 }

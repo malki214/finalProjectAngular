@@ -1,9 +1,10 @@
-<div>
+<div class="lesson-card" [ngStyle]="{'border': lessonStart()? 'solid black 5px':''}">
     <h2>{{currentLeson.className}}</h2>
     <h3>{{currentLeson.teacherName}}</h3>
     <h5>number of sessions: {{currentLeson.numberOfSessions}}</h5>
-    <h5>start date: {{currentLeson.startDate}}</h5>
+    <h5>start date: {{currentLeson.startDate.getFullYear()}}-{{currentLeson.startDate.getMonth()}}-{{currentLeson.startDate.getDate()}}</h5>
     <h5>day of week: {{currentLeson.dayOfWeek}}</h5>
     <h5>clock: {{currentLeson.time}}</h5>
     <p>price: {{currentLeson.price}}</p>
+    <h4>count of students: {{countStudents()}} <span *ngIf="countStudents()>=10"> - group full!</span></h4>
 </div>

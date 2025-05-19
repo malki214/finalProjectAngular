@@ -1,3 +1,86 @@
-.ng-invalid.ng-dirty{
+/* .ng-invalid.ng-dirty {
     border-color: red;
+} */
+
+form {
+    background-color: #7bebcb;
+    /* צבע רקע ירוק */
+    padding: 20px;
+    /* ריפוד פנימי */
+    border-radius: 8px;
+    /* פינות מעוגלות */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* צל */
+    width: 400px;
+    height: 150px;
+    /* רוחב 50% מהמסך */
+    /* width: 400px; */
+    /* הגבלת רוחב מקסימלי */
+    padding-bottom: 8%;
+}
+
+label {
+    display: block;
+    /* כל תווית בשורה חדשה */
+    margin-bottom: 8px;
+    /* רווח בין תווית לשדה */
+    font-size: 20px;
+    /* גודל טקסט גדול יותר */
+    /* הפיכת הטקסט לבולד */
+    color: #333;
+    /* צבע טקסט כהה */
+    font-family: 'Arial', sans-serif;
+    /* סוג גופן יפה יותר */
+}
+
+input {
+    width: 90%;
+    /* רוחב מלא */
+    padding: 10px;
+    /* ריפוד פנימי לשדה */
+    margin-bottom: 16px;
+    /* רווח בין השדות */
+    border: 1px solid #ccc;
+    /* גבול קל */
+    border-radius: 4px;
+    /* פינות מעוגלות */
+
+
+}
+
+button {
+    background-color: #1d8b61;
+    /* צבע ירוק לכפתור */
+    color: white;
+    /* צבע טקסט לבן */
+    padding: 10px 15px;
+    /* ריפוד פנימי לכפתור */
+    border: none;
+    /* ביטול גבול */
+    border-radius: 4px;
+    /* פינות מעוגלות */
+    cursor: pointer;
+    /* סמן עכבר */
+    font-size: 16px;
+    /* גודל טקסט */
+    margin-left: 40%;
+    margin-block: 3%;
+}
+
+button:hover {
+    background-color: #145b40;
+    /* צבע ירוק כהה יותר בעת ריחוף */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* גובה מלא עבור עמוד הלוגין */
+}
+
+p{
+    margin: 0;
+    color:red;
 }

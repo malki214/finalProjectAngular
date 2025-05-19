@@ -523,6 +523,71 @@ export class StudentsService {
       "phone": "052-3456789",
       "lessonName": "Endurance Training",
       "paid": false
+    },
+    {
+      "name": "Chaya Rosen",
+      "phone": "053-0123463",
+      "lessonName": "Yoga",
+      "paid": true
+    },
+    {
+      "name": "Chaya Rosen",
+      "phone": "053-0123463",
+      "lessonName": "Yoga",
+      "paid": true
+    },
+    {
+      "name": "Chaya Rosen",
+      "phone": "053-0123463",
+      "lessonName": "Yoga",
+      "paid": true
+    },
+    {
+      "name": "Chaya Rosen",
+      "phone": "053-0123463",
+      "lessonName": "Yoga",
+      "paid": true
+    },
+    {
+      "name": "Chaya Rosen",
+      "phone": "053-0123463",
+      "lessonName": "Yoga",
+      "paid": true
+    },
+    {
+      "name": "Hannah Green",
+      "phone": "054-2345670",
+      "lessonName": "Kickboxing",
+      "paid": true
+    },{
+      "name": "Hannah Green",
+      "phone": "054-2345670",
+      "lessonName": "Kickboxing",
+      "paid": true
+    },
+    {
+      "name": "Hannah Green",
+      "phone": "054-2345670",
+      "lessonName": "Kickboxing",
+      "paid": true
+    },
+    {
+      "name": "Hannah Green",
+      "phone": "054-2345670",
+      "lessonName": "Kickboxing",
+      "paid": true
+    },
+    {
+      "name": "Hannah Green",
+      "phone": "054-2345670",
+      "lessonName": "Kickboxing",
+      "paid": true
+    },
+    {
+      "name": "Hannah Green",
+      "phone": "054-2345670",
+      "lessonName": "Kickboxing",
+      "paid": true
     }
   ]
   getStudents(){

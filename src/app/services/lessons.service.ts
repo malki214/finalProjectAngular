@@ -13,7 +13,7 @@ export class LessonsService {
         "className": "Strength Training",
         "teacherName": "Dina Cohen",
         "numberOfSessions": 10,
-        "startDate": "2023-11-01",
+        "startDate": new Date("2025-11-01"),
         "price": 200,
         "dayOfWeek": "Sunday",
         "time": "18:00"
@@ -23,7 +23,7 @@ export class LessonsService {
         "className": "Yoga",
         "teacherName": "Miriam Katz",
         "numberOfSessions": 8,
-        "startDate": "2023-10-25",
+        "startDate": new Date("2023-10-25"),
         "price": 160,
         "dayOfWeek": "Tuesday",
         "time": "17:00"
@@ -33,7 +33,7 @@ export class LessonsService {
         "className": "Zumba",
         "teacherName": "Esther Rosen",
         "numberOfSessions": 12,
-        "startDate": "2023-11-15",
+        "startDate": new Date("2026-11-15"),
         "price": 240,
         "dayOfWeek": "Thursday",
         "time": "19:00"
@@ -43,7 +43,7 @@ export class LessonsService {
         "className": "Functional Training",
         "teacherName": "Tova Green",
         "numberOfSessions": 6,
-        "startDate": "2023-10-30",
+        "startDate": new Date("2026-10-30"),
         "price": 120,
         "dayOfWeek": "Monday",
         "time": "20:00"
@@ -53,7 +53,7 @@ export class LessonsService {
         "className": "Pilates",
         "teacherName": "Rachel Friedman",
         "numberOfSessions": 10,
-        "startDate": "2023-11-05",
+        "startDate": new Date("2023-11-05"),
         "price": 200,
         "dayOfWeek": "Wednesday",
         "time": "16:00"
@@ -63,7 +63,7 @@ export class LessonsService {
         "className": "Endurance Training",
         "teacherName": "Dina Cohen",
         "numberOfSessions": 10,
-        "startDate": "2023-11-08",
+        "startDate": new Date("2025-11-08"),
         "price": 220,
         "dayOfWeek": "Sunday",
         "time": "19:00"
@@ -73,7 +73,7 @@ export class LessonsService {
         "className": "Advanced Yoga",
         "teacherName": "Miriam Katz",
         "numberOfSessions": 8,
-        "startDate": "2023-11-12",
+        "startDate": new Date("2023-11-12"),
         "price": 180,
         "dayOfWeek": "Tuesday",
         "time": "18:00"
@@ -83,7 +83,7 @@ export class LessonsService {
         "className": "Kids Zumba",
         "teacherName": "Esther Rosen",
         "numberOfSessions": 12,
-        "startDate": "2023-11-20",
+        "startDate": new Date("2023-11-20"),
         "price": 250,
         "dayOfWeek": "Thursday",
         "time": "17:00"
@@ -93,7 +93,7 @@ export class LessonsService {
         "className": "Advanced Functional Training",
         "teacherName": "Tova Green",
         "numberOfSessions": 6,
-        "startDate": "2023-11-03",
+        "startDate": new Date("2023-11-03"),
         "price": 140,
         "dayOfWeek": "Monday",
         "time": "21:00"
@@ -103,7 +103,7 @@ export class LessonsService {
         "className": "Advanced Pilates",
         "teacherName": "Rachel Friedman",
         "numberOfSessions": 10,
-        "startDate": "2023-11-07",
+        "startDate": new Date("2023-11-07"),
         "price": 220,
         "dayOfWeek": "Wednesday",
         "time": "15:00"
@@ -113,7 +113,7 @@ export class LessonsService {
         "className": "Kickboxing",
         "teacherName": "Dina Cohen",
         "numberOfSessions": 10,
-        "startDate": "2023-11-10",
+        "startDate": new Date("2023-11-10"),
         "price": 210,
         "dayOfWeek": "Sunday",
         "time": "20:00"
@@ -123,7 +123,7 @@ export class LessonsService {
         "className": "Meditation",
         "teacherName": "Miriam Katz",
         "numberOfSessions": 8,
-        "startDate": "2023-11-14",
+        "startDate": new Date("2025-11-14"),
         "price": 150,
         "dayOfWeek": "Tuesday",
         "time": "19:00"
@@ -133,17 +133,17 @@ export class LessonsService {
         "className": "Dance Fitness",
         "teacherName": "Esther Rosen",
         "numberOfSessions": 12,
-        "startDate": "2023-11-18",
+        "startDate": new Date("2025-05-19"),
         "price": 230,
         "dayOfWeek": "Thursday",
-        "time": "16:30"
+        "time": "18:05"
     },
     {
         "id": 14,
         "className": "Core Training",
         "teacherName": "Tova Green",
         "numberOfSessions": 6,
-        "startDate": "2023-11-02",
+        "startDate": new Date("2026-01-01"),
         "price": 130,
         "dayOfWeek": "Monday",
         "time": "19:30"
@@ -153,7 +153,7 @@ export class LessonsService {
         "className": "Stretch and Flex",
         "teacherName": "Rachel Friedman",
         "numberOfSessions": 10,
-        "startDate": "2023-11-04",
+        "startDate": new Date("2027-01-20"),
         "price": 190,
         "dayOfWeek": "Wednesday",
         "time": "14:00"
@@ -163,7 +163,7 @@ export class LessonsService {
         "className": "Boxing",
         "teacherName": "Dina Cohen",
         "numberOfSessions": 10,
-        "startDate": "2023-11-09",
+        "startDate": new Date("2024-12-14"),
         "price": 200,
         "dayOfWeek": "Sunday",
         "time": "18:30"
@@ -173,7 +173,7 @@ export class LessonsService {
         "className": "Restorative Yoga",
         "teacherName": "Miriam Katz",
         "numberOfSessions": 8,
-        "startDate": "2023-11-11",
+        "startDate": new Date("2025-02-14"),
         "price": 170,
         "dayOfWeek": "Tuesday",
         "time": "17:30"
@@ -183,7 +183,7 @@ export class LessonsService {
         "className": "Zumba Gold",
         "teacherName": "Esther Rosen",
         "numberOfSessions": 12,
-        "startDate": "2023-11-16",
+        "startDate": new Date("2025-05-01"),
         "price": 240,
         "dayOfWeek": "Thursday",
         "time": "15:30"
@@ -193,7 +193,7 @@ export class LessonsService {
         "className": "Agility Training",
         "teacherName": "Tova Green",
         "numberOfSessions": 6,
-        "startDate": "2023-11-06",
+        "startDate": new Date("2025-05-25"),
         "price": 150,
         "dayOfWeek": "Monday",
         "time": "20:30"
@@ -203,7 +203,7 @@ export class LessonsService {
         "className": "Balance Training",
         "teacherName": "Rachel Friedman",
         "numberOfSessions": 10,
-        "startDate": "2023-11-13",
+        "startDate": new Date("2025-05-20"),
         "price": 210,
         "dayOfWeek": "Wednesday",
         "time": "15:30"
@@ -213,7 +213,7 @@ export class LessonsService {
         "className": "HIIT Training",
         "teacherName": "Dina Cohen",
         "numberOfSessions": 10,
-        "startDate": "2023-11-17",
+        "startDate": new Date("2022-07-28"),
         "price": 250,
         "dayOfWeek": "Sunday",
         "time": "19:30"
@@ -223,7 +223,7 @@ export class LessonsService {
         "className": "Vinyasa Yoga",
         "teacherName": "Miriam Katz",
         "numberOfSessions": 8,
-        "startDate": "2023-11-19",
+        "startDate": new Date("2025-05-25"),
         "price": 180,
         "dayOfWeek": "Tuesday",
         "time": "18:30"
@@ -233,7 +233,7 @@ export class LessonsService {
         "className": "Aqua Zumba",
         "teacherName": "Esther Rosen",
         "numberOfSessions": 12,
-        "startDate": "2023-11-21",
+        "startDate": new Date("2025-06-02"),
         "price": 260,
         "dayOfWeek": "Thursday",
         "time": "17:30"
@@ -243,7 +243,7 @@ export class LessonsService {
         "className": "Mobility Training",
         "teacherName": "Tova Green",
         "numberOfSessions": 6,
-        "startDate": "2023-11-23",
+        "startDate": new Date("2027-11-14"),
         "price": 140,
         "dayOfWeek": "Monday",
         "time": "19:00"
@@ -253,7 +253,7 @@ export class LessonsService {
         "className": "Chair Pilates",
         "teacherName": "Rachel Friedman",
         "numberOfSessions": 10,
-        "startDate": "2023-11-25",
+        "startDate": new Date("2023-12-14"),
         "price": 200,
         "dayOfWeek": "Wednesday",
         "time": "15:00"
@@ -263,7 +263,7 @@ export class LessonsService {
         "className": "Self-Defense",
         "teacherName": "Dina Cohen",
         "numberOfSessions": 10,
-        "startDate": "2023-11-29",
+        "startDate": new Date("2023-11-14"),
         "price": 220,
         "dayOfWeek": "Sunday",
         "time": "20:00"
@@ -273,7 +273,7 @@ export class LessonsService {
         "className": "Yoga for Beginners",
         "teacherName": "Miriam Katz",
         "numberOfSessions": 8,
-        "startDate": "2023-11-30",
+        "startDate": new Date("2025-11-01"),
         "price": 160,
         "dayOfWeek": "Tuesday",
         "time": "17:00"
@@ -283,7 +283,7 @@ export class LessonsService {
         "className": "Zumba for Seniors",
         "teacherName": "Esther Rosen",
         "numberOfSessions": 12,
-        "startDate": "2023-12-01",
+        "startDate": new Date("2025-11-14"),
         "price": 240,
         "dayOfWeek": "Thursday",
         "time": "19:00"
@@ -293,7 +293,7 @@ export class LessonsService {
         "className": "Functional Movement",
         "teacherName": "Tova Green",
         "numberOfSessions": 6,
-        "startDate": "2023-12-02",
+        "startDate": new Date("2024-11-14"),
         "price": 130,
         "dayOfWeek": "Monday",
         "time": "20:30"
@@ -303,10 +303,10 @@ export class LessonsService {
         "className": "Reformer Pilates",
         "teacherName": "Rachel Friedman",
         "numberOfSessions": 10,
-        "startDate": "2023-12-03",
+        "startDate": new Date("2025-06-19"),
         "price": 220,
         "dayOfWeek": "Wednesday",
-        "time": "16:00"
+        "time": "18:10"
     }
 ]
 

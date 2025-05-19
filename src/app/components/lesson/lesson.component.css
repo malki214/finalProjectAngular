@@ -1,0 +1,52 @@
+.lesson-card {
+    background-color: #f9f9f9;
+    /* צבע רקע בהיר */
+    border: 1px solid #ccc;
+    /* גבול קל */
+    border-radius: 8px;
+    /* פינות מעוגלות */
+    padding: 20px;
+    /* ריפוד פנימי */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* צל קל */
+    transition: transform 0.3s;
+    /* אנימציה להגדלה */
+}
+
+.lesson-card:hover {
+    transform: scale(1.05);
+    /* הגדלה קלה בעת ריחוף */
+}
+
+.lesson-card h2 {
+    color: #4CAF50;
+    /* צבע ירוק לתואר */
+    margin-bottom: 10px;
+    /* רווח בין תואר לתוכן */
+}
+
+.lesson-card h3 {
+    color: #333;
+    /* צבע כהה למורה */
+    margin-bottom: 8px;
+    /* רווח בין שם המורה לתוכן */
+}
+
+.lesson-card h5 {
+    color: #555;
+    /* צבע כהה יותר למידע */
+    margin: 4px 0;
+    /* רווח בין השורות */
+}
+
+.lesson-card p {
+    font-size: 18px;
+    /* גודל טקסט למחיר */
+    font-weight: bold;
+    /* טקסט בולד */
+    color: #4CAF50;
+    /* צבע ירוק למחיר */
+}
+span{
+    color: #4CAF50;
+}

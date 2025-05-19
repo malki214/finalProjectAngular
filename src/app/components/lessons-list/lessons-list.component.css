@@ -1,0 +1,15 @@
+.gallery {
+    display: grid;
+    /* שימוש ברשת להצגת כרטיסים */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* עיצוב רשת גמיש */
+    gap: 20px;
+    /* רווח בין הכרטיסים */
+    padding: 20px;
+    /* ריפוד פנימי לגלריה */
+}
+h1{
+    text-align: center;
+    color: #4CAF50;
+    text-decoration: underline solid 2px #4CAF50;
+}
