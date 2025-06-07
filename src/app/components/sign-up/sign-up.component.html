@@ -1,1 +1,7 @@
-<p>sign-up works!</p>
+  <h1>Students</h1>
+  <ag-grid-angular style="width: 840px; height: 515px;"
+        [rowData]="studentList"
+        [columnDefs]="columnDefs" 
+        [pagination]="true"
+        [paginationPageSizeSelector]="[10,20,50]"
+        [paginationPageSize]="10"/>
