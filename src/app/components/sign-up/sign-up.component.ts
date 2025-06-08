@@ -20,8 +20,13 @@ export class SignUpComponent {
     { field: 'name', headerName: 'Name', sortable: true, filter: true },
     { field: 'phone', headerName: 'Number Phone', sortable: true, filter: true },
     { field: 'lessonName', headerName: 'Course', sortable: true, filter: true },
-    { field: 'paid', headerName: 'Paid', sortable: true, filter: true }
+    { field: 'paid', headerName: 'Paid', sortable: true, filter: true },
+    { field: '', headerName: 'Details', cellRenderer:(params: any) => `<button (click)="viewDetails(${params.data.id})">Details</button>` }
+
   ];
 
+  viewDetails(id: string) {
+    const student = this.studentList.find(s => s.id === id);
+  }
 
 }
