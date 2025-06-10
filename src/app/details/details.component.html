@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>student details</h2>
+  <mat-dialog-content>
+    <p>Name: {{student!.name}}</p>
+    <p>Phone: {{student!.phone}}</p>
+    <p>Course: {{student!.lessonName}}</p>
+    <p>Paid: {{student!.paid ? 'Yes' : 'No'}}</p>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button mat-dialog-close>סגור</button>
+  </mat-dialog-actions>

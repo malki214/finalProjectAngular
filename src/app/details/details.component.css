@@ -1,0 +1,6 @@
+mat-dialog-actions, mat-dialog-content{
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
