@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>student details</h2>
+<mat-dialog-content>
+    <form class="example-form" [formGroup]="studentDetails" (submit)="addSign()">
+        <input type="text" placeholder="Name" formControlName="Name">
+        <input type="text" placeholder="Phone" formControlName="Phone">
+        <select name="Course" id="" formControlName="Course">
+            <option value="" disabled selected hidden>Course</option>
+            <option *ngFor = "let course of CourseNames" value="{{course}}">{{course}}</option>
+        </select>
+        <label for="Paid">Paid</label>
+        <input type="checkbox" placeholder="name" formControlName="Paid" id="Paid">
+        <button mat-button mat-dialog-close type="submit">add</button>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>סגור</button>
+</mat-dialog-actions>

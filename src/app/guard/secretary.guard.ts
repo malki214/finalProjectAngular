@@ -1,9 +1,22 @@
-import { CanActivateFn } from '@angular/router';
 
-export const secretaryGuard: CanActivateFn = (route, state) => {
-  let role = localStorage.getItem("role");
-  if(role == "secretary")
-    return true;
-  //alert("הגישה רק למזכירות")
-  return false;
-};
+import { Injectable } from '@angular/core';
+import { CanActivate, Router } from '@angular/router';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class secretaryGuard implements CanActivate {
+
+  constructor(private router: Router) {}
+
+  canActivate(): boolean {
+     let role = localStorage.getItem("role");
+    if(role == "secretary"){
+      return true;
+    } else {
+      alert("אין לך הרשאה של מזכירה")
+      this.router.navigate(['/']);
+      return false;
+    }
+  }
+}

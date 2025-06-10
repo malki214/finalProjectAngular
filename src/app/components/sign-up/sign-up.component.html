@@ -1,7 +1,12 @@
-  <h1>Students</h1>
-  <ag-grid-angular style="width: 1050px; height: 515px;"
-        [rowData]="studentList"
+<app-logout></app-logout>
+<h1>Students</h1>
+<div class="grid-container">
+  <button (click)="oponNewSign()">הוספת נרשמת חדשה</button>
+    <ag-grid-angular id="grid"
+        [rowData]="students"
         [columnDefs]="columnDefs" 
         [pagination]="true"
         [paginationPageSizeSelector]="[10,20,50]"
-        [paginationPageSize]="10"/>
+        [paginationPageSize]="10"
+        (gridReady)="onGridReady($event)"/>
+</div>

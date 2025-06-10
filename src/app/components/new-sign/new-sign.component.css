@@ -1,0 +1,25 @@
+mat-dialog-actions, mat-dialog-content{
+    /* display: flex; */
+    /* text-align: center;
+    justify-content: center; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* עיצוב אנכי */
+    gap: 15px; /* רווח בין השדות */
+}
+
+form input, 
+form select {
+    padding: 10px; /* ריפוד פנימי */
+    border: 1px solid #ccc; /* גבול */
+    border-radius: 4px; /* פינות מעוגלות */
+    width: 100%; /* רוחב מלא */
+    box-sizing: border-box; /* כולל ריפוד בגבול */
+}
+
+label{
+    display: inline-block;
+}

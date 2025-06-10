@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ export class StudentsService {
 
   constructor() { }
 
-  studentsList = [
+  private studentsList = [
     {
       "id": "10000001",
       "name": "Chava Cohen",
@@ -616,10 +617,122 @@ export class StudentsService {
       "phone": "053-0123463",
       "lessonName": "Yoga",
       "paid": true
-    }
+    },
+    {
+      "id": "10000088",
+      "name": "Rivka Cohen",
+      "phone": "054-2345678",
+      "lessonName": "Yoga",
+      "paid": true
+    },
+    {
+      "id": "10000089",
+      "name": "Shoshana Friedman",
+      "phone": "052-3456789",
+      "lessonName": "Yoga",
+      "paid": false
+    },
+    {
+      "id": "10000090",
+      "name": "Leah Schwartz",
+      "phone": "053-4567890",
+      "lessonName": "Yoga",
+      "paid": true
+    },
+    {
+      "id": "10000091",
+      "name": "Esther Katz",
+      "phone": "050-5678901",
+      "lessonName": "Yoga",
+      "paid": false
+    },
+    {
+      "id": "10000092",
+      "name": "Miriam Levy",
+      "phone": "054-6789012",
+      "lessonName": "Yoga",
+      "paid": true
+    },
+    {
+      "id": "10000093",
+      "name": "Chaya Gold",
+      "phone": "052-7890123",
+      "lessonName": "Yoga",
+      "paid": false
+    },
+    {
+      "id": "10000094",
+      "name": "Naomi Rosen",
+      "phone": "053-8901234",
+      "lessonName": "Pilates",
+      "paid": true
+    },
+    {
+      "id": "10000095",
+      "name": "Dina Silver",
+      "phone": "050-9012345",
+      "lessonName": "Pilates",
+      "paid": false
+    },
+    {
+      "id": "10000096",
+      "name": "Hannah Green",
+      "phone": "054-0123456",
+      "lessonName": "Pilates",
+      "paid": true
+    },
+    {
+      "id": "10000097",
+      "name": "Tova Katz",
+      "phone": "052-1234567",
+      "lessonName": "Pilates",
+      "paid": false
+    },
+    {
+      "id": "10000098",
+      "name": "Rivka Green",
+      "phone": "053-2345678",
+      "lessonName": "Pilates",
+      "paid": true
+    },
+    {
+      "id": "10000099",
+      "name": "Naomi Cohen",
+      "phone": "054-2345679",
+      "lessonName": "Pilates",
+      "paid": true
+    },
+    {
+      "id": "10000100",
+      "name": "Rivka Green",
+      "phone": "052-3456780",
+      "lessonName": "Pilates",
+      "paid": false
+    },
+    {
+      "id": "10000101",
+      "name": "Miriam Katz",
+      "phone": "053-4567891",
+      "lessonName": "Pilates",
+      "paid": true
+    },
+    {
+      "id": "10000102",
+      "name": "Esther Silver",
+      "phone": "050-5678902",
+      "lessonName": "Pilates",
+      "paid": false
+    },
 ];
 
+  private studentsListSubject = new BehaviorSubject<any[]>(this.studentsList);
   getStudents(){
-    return this.studentsList;
+    return this.studentsListSubject.asObservable();
+  }
+
+  addStudent(new_sing:any){
+    this.studentsList.push({ id: (parseInt(this.studentsList[this.studentsList.length -1].id) + 1).toString() ,...new_sing})
+    this.studentsListSubject.next(this.studentsList); 
+    console.log(new_sing);  
   }
 }
